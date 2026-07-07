@@ -674,6 +674,9 @@ ul, ol { padding-left: 1.25em; }
 .volume-banner--alt {
   background: linear-gradient(135deg, #0a2540 0%, #133a63 100%);
 }
+.volume-banner--accent {
+  background: linear-gradient(135deg, #133a63 0%, #1f5687 100%);
+}
 .volume-meta {
   display: flex;
   flex-wrap: wrap;
