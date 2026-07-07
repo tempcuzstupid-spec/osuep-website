@@ -7,7 +7,7 @@
   <meta name="author" content="One Stop Uniforms" />
   <meta name="robots" content="index,follow" />
   <meta property="og:title" content="One Stop Uniforms — Enterprise Master Specification" />
-  <meta property="og:description" content="The constitutional foundation of the OSUEP. Volumes I–V approved; volumes VI–VIII in spec." />
+  <meta property="og:description" content="The constitutional foundation of the OSUEP. Volumes I–VI approved; volumes VII–VIII in spec." />
   <meta property="og:type" content="website" />
   <title>One Stop Uniforms — Enterprise Master Specification</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a2540'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%23f5b700'%3EO%3C/text%3E%3C/svg%3E" />
@@ -23,7 +23,7 @@
   <!-- Top bar -->
   <div class="topbar">
     <div class="container topbar__inner">
-      <span class="topbar__badge">Volumes I–V · Approved Foundation Drafts</span>
+      <span class="topbar__badge">Volumes I–VI · Approved Foundation Drafts</span>
       <span class="topbar__meta">Enterprise Master Specification · Confidential — Internal Use Only</span>
     </div>
   </div>
@@ -50,6 +50,7 @@
         <a href="#vol3">Vol III</a>
         <a href="#vol4">Vol IV</a>
         <a href="#vol5">Vol V</a>
+        <a href="#vol6">Vol VI</a>
         <a href="#library">Library</a>
         <a href="#charter">AI Charter</a>
         <a href="#roadmap">25-Year Vision</a>
@@ -66,6 +67,7 @@
       <a href="#vol3">Volume III — Administration &amp; Operations</a>
       <a href="#vol4">Volume IV — Product &amp; Supplier</a>
       <a href="#vol5">Volume V — Embroidery &amp; Production</a>
+      <a href="#vol6">Volume VI — Technical Architecture</a>
       <a href="#library">Specification Library</a>
       <a href="#charter">AI Charter</a>
       <a href="#roadmap">25-Year Vision</a>
@@ -88,7 +90,7 @@
         </p>
         <div class="hero__meta">
           <div><span class="hero__meta-label">Volumes</span><span class="hero__meta-value">I – VIII</span></div>
-          <div><span class="hero__meta-label">Approved</span><span class="hero__meta-value">5 of 8</span></div>
+          <div><span class="hero__meta-label">Approved</span><span class="hero__meta-value">6 of 8</span></div>
           <div><span class="hero__meta-label">Version</span><span class="hero__meta-value">1.0</span></div>
           <div><span class="hero__meta-label">Owner</span><span class="hero__meta-value">One Stop Uniforms</span></div>
         </div>
@@ -98,6 +100,7 @@
           <a href="#vol3" class="btn btn--ghost">Volume III</a>
           <a href="#vol4" class="btn btn--ghost">Volume IV</a>
           <a href="#vol5" class="btn btn--ghost">Volume V</a>
+          <a href="#vol6" class="btn btn--ghost">Volume VI</a>
           <a href="#library" class="btn btn--ghost">All 8 Volumes</a>
         </div>
       </div>
@@ -1097,6 +1100,251 @@
 
     </div><!-- /#vol5 -->
 
+    <!-- ====================== VOLUME VI ====================== -->
+    <div id="vol6">
+
+    <!-- Volume VI banner -->
+    <section class="section volume-banner volume-banner--slate" id="volume-6">
+      <div class="container">
+        <p class="section__eyebrow">Volume VI</p>
+        <h2 class="section__title">Technical Architecture &amp; Engineering</h2>
+        <p class="section__lede">
+          Define the technical architecture, engineering standards,
+          infrastructure, and software design principles &mdash; the substrate
+          underneath every other volume in this specification.
+        </p>
+        <div class="volume-meta">
+          <span class="volume-meta__pill volume-meta__pill--approved">Status: Approved Foundation Draft</span>
+          <span class="volume-meta__pill">Version 1.0</span>
+          <span class="volume-meta__pill">Depends on: Volumes I–V</span>
+        </div>
+        <div class="volume-banner__quote">
+          <strong>Inheritance Statement:</strong> This volume inherits all
+          governance, business rules, product architecture, and operational
+          standards from previous volumes.
+        </div>
+      </div>
+    </section>
+
+    <!-- Vol VI — Purpose + Application Architecture -->
+    <section class="section" id="vol6-purpose">
+      <div class="container container--narrow">
+        <p class="section__eyebrow">Purpose</p>
+        <h2 class="section__title">The substrate the spec runs on</h2>
+        <p class="section__lede">
+          Define the technical architecture, engineering standards,
+          infrastructure, and software design principles for the One Stop
+          Uniforms Enterprise Platform.
+        </p>
+        <div class="card card--feature">
+          <p class="card__eyebrow">Application Architecture</p>
+          <h3 class="card__title">Modular, API-first, service-aware</h3>
+          <p class="card__body">
+            Adopt a modular, API-first architecture with clearly separated
+            frontend, backend, database, authentication, integrations, and
+            background services &mdash; each layer independently deployable.
+          </p>
+          <ul class="charter-grid">
+            <li><span class="check" aria-hidden="true">&#10003;</span> Frontend</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Backend</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Database</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Authentication</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Integrations</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Background Services</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vol VI — Database + API Standards (split) -->
+    <section class="section section--split section--alt" id="vol6-data-api">
+      <div class="container">
+        <div class="card card--feature">
+          <p class="card__eyebrow">Database Standards</p>
+          <h3 class="card__title">Enterprise-grade data, by design</h3>
+          <p class="card__body">
+            Normalize enterprise data models, support versioning, auditing,
+            soft deletes, encrypted sensitive fields, and scalable indexing
+            &mdash; the schema supports decades of growth without re-platforms.
+          </p>
+          <ul class="chip-grid" aria-label="Database standards">
+            <li class="chip">Normalized Models</li>
+            <li class="chip">Versioning</li>
+            <li class="chip">Auditing</li>
+            <li class="chip">Soft Deletes</li>
+            <li class="chip">Encrypted Sensitive Fields</li>
+            <li class="chip">Scalable Indexing</li>
+          </ul>
+        </div>
+
+        <div class="card card--feature card--accent">
+          <p class="card__eyebrow">API Standards</p>
+          <h3 class="card__title">Versioned, validated, documented</h3>
+          <p class="card__body">
+            RESTful and GraphQL-ready services, versioned endpoints,
+            authentication, authorization, rate limiting, logging, validation,
+            and documentation &mdash; contracts humans and machines trust.
+          </p>
+          <ul class="chip-grid" aria-label="API standards">
+            <li class="chip">RESTful</li>
+            <li class="chip">GraphQL-Ready</li>
+            <li class="chip">Versioned Endpoints</li>
+            <li class="chip">Authentication</li>
+            <li class="chip">Authorization</li>
+            <li class="chip">Rate Limiting</li>
+            <li class="chip">Logging</li>
+            <li class="chip">Validation</li>
+            <li class="chip">Documentation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vol VI — Security Engineering + DevOps (split) -->
+    <section class="section section--split" id="vol6-security-devops">
+      <div class="container">
+        <div class="card card--feature">
+          <p class="card__eyebrow">Security Engineering</p>
+          <h3 class="card__title">Secure by default, secure by process</h3>
+          <p class="card__body">
+            HTTPS everywhere, encrypted secrets, MFA, role-based access
+            control, audit logging, secure software development lifecycle,
+            dependency management, and vulnerability scanning.
+          </p>
+          <ul class="charter-grid">
+            <li><span class="check" aria-hidden="true">&#10003;</span> HTTPS Everywhere</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Encrypted Secrets</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> MFA</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> RBAC</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Audit Logging</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Secure SDLC</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Dependency Management</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Vulnerability Scanning</li>
+          </ul>
+        </div>
+
+        <div class="card card--feature card--accent">
+          <p class="card__eyebrow">DevOps &amp; CI/CD</p>
+          <h3 class="card__title">Ship clean, recover fast</h3>
+          <p class="card__body">
+            GitHub-based workflows, automated testing, continuous integration,
+            continuous deployment, environment separation, rollback strategy,
+            infrastructure monitoring, and disaster recovery.
+          </p>
+          <ul class="chip-grid" aria-label="DevOps and CI/CD">
+            <li class="chip">GitHub Workflows</li>
+            <li class="chip">Automated Testing</li>
+            <li class="chip">Continuous Integration</li>
+            <li class="chip">Continuous Deployment</li>
+            <li class="chip">Environment Separation</li>
+            <li class="chip">Rollback Strategy</li>
+            <li class="chip">Infrastructure Monitoring</li>
+            <li class="chip">Disaster Recovery</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vol VI — Performance & Scalability -->
+    <section class="section section--alt" id="vol6-perf-scale">
+      <div class="container">
+        <p class="section__eyebrow">Performance &amp; Scalability</p>
+        <h2 class="section__title">Designed for decades</h2>
+        <p class="section__lede">
+          Design for horizontal scaling, caching, CDN integration, asynchronous
+          processing, queue management, high availability, and future cloud
+          expansion.
+        </p>
+        <ul class="values-grid">
+          <li class="value" data-i="01"><h4>Horizontal Scaling</h4><p>Scale out, not up &mdash; across stateless services.</p></li>
+          <li class="value" data-i="02"><h4>Caching</h4><p>Multi-layer caching at edge, application, and data tiers.</p></li>
+          <li class="value" data-i="03"><h4>CDN Integration</h4><p>Static assets and media via global CDN.</p></li>
+          <li class="value" data-i="04"><h4>Asynchronous Processing</h4><p>Queue-driven workloads for long-running operations.</p></li>
+          <li class="value" data-i="05"><h4>Queue Management</h4><p>Retry, backoff, dead-letter, and observability built in.</p></li>
+          <li class="value" data-i="06"><h4>High Availability</h4><p>Multi-region, multi-AZ deployments where applicable.</p></li>
+          <li class="value" data-i="07"><h4>Future Cloud Expansion</h4><p>Cloud-agnostic architecture with portability in mind.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Vol VI — Quality Standards (dark) -->
+    <section class="section section--dark" id="vol6-quality">
+      <div class="container">
+        <p class="section__eyebrow section__eyebrow--light">Quality Standards</p>
+        <h2 class="section__title section__title--light">Engineering rigor, codified</h2>
+        <p class="section__lede section__lede--light">
+          Comprehensive automated testing, code review, documentation,
+          accessibility, performance benchmarks, observability, and
+          maintainability &mdash; the bar every PR is held to.
+        </p>
+        <ol class="rules-list">
+          <li class="rule">
+            <span class="rule__num">01</span>
+            <div class="rule__body">
+              <h4>Automated Testing</h4>
+              <p>Unit, integration, and end-to-end coverage on every change.</p>
+            </div>
+          </li>
+          <li class="rule">
+            <span class="rule__num">02</span>
+            <div class="rule__body">
+              <h4>Code Review</h4>
+              <p>Mandatory reviews with shared ownership.</p>
+            </div>
+          </li>
+          <li class="rule">
+            <span class="rule__num">03</span>
+            <div class="rule__body">
+              <h4>Documentation</h4>
+              <p>Inline, README, and architectural decision records.</p>
+            </div>
+          </li>
+          <li class="rule">
+            <span class="rule__num">04</span>
+            <div class="rule__body">
+              <h4>Accessibility</h4>
+              <p>WCAG-conformant UX across every customer-facing surface.</p>
+            </div>
+          </li>
+          <li class="rule">
+            <span class="rule__num">05</span>
+            <div class="rule__body">
+              <h4>Performance Benchmarks</h4>
+              <p>Quantified performance budgets enforced in CI.</p>
+            </div>
+          </li>
+          <li class="rule">
+            <span class="rule__num">06</span>
+            <div class="rule__body">
+              <h4>Observability</h4>
+              <p>Metrics, logs, and traces as first-class deliverables.</p>
+            </div>
+          </li>
+          <li class="rule">
+            <span class="rule__num">07</span>
+            <div class="rule__body">
+              <h4>Maintainability</h4>
+              <p>Clean systems stay clean &mdash; for the next engineer.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Vol VI — Strategic Goal -->
+    <section class="section" id="vol6-strategic-goal">
+      <div class="container container--narrow">
+        <p class="section__eyebrow">Strategic Goal</p>
+        <h2 class="section__title">Long-term growth, continuous innovation</h2>
+        <blockquote class="pull-quote">
+          “Provide a secure, maintainable, enterprise-grade technical foundation
+          capable of supporting long-term growth and continuous innovation.”
+        </blockquote>
+      </div>
+    </section>
+
+    </div><!-- /#vol6 -->
+
     <!-- ====================== SPECIFICATION LIBRARY ====================== -->
     <section class="section section--alt" id="library">
       <div class="container">
@@ -1104,7 +1352,7 @@
         <h2 class="section__title">All eight volumes</h2>
         <p class="section__lede">
           The OSUEP master specification is structured as eight volumes. Volumes
-          I–V are approved; Volumes VI–VIII are in development and will land in
+          I–VI are approved; Volumes VII–VIII are in development and will land in
           succession.
         </p>
         <ul class="library" aria-label="Specification volumes">
@@ -1148,12 +1396,12 @@
               <span class="library__pill library__pill--ok">Approved</span>
             </div>
           </li>
-          <li class="library__item" id="lib-6">
+          <li class="library__item library__item--approved" id="lib-6">
             <span class="library__num">VI</span>
             <div class="library__body">
-              <h4>Pending Spec</h4>
-              <p>Awaiting governing document from One Stop Uniforms.</p>
-              <span class="library__pill">Pending</span>
+              <h4>Technical Architecture &amp; Engineering</h4>
+              <p>App arch, data, API, security, DevOps, performance, quality standards.</p>
+              <span class="library__pill library__pill--ok">Approved</span>
             </div>
           </li>
           <li class="library__item" id="lib-7">
@@ -1275,6 +1523,15 @@
             </svg>
             <p class="seal__label">Approved</p>
           </div>
+          <div class="seal seal--small">
+            <svg viewBox="0 0 200 200" width="100" height="100" aria-hidden="true">
+              <circle cx="100" cy="100" r="92" fill="none" stroke="#0a2540" stroke-width="3"/>
+              <circle cx="100" cy="100" r="74" fill="none" stroke="#0a2540" stroke-width="1"/>
+              <text x="100" y="90" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#0a2540">OSUEP</text>
+              <text x="100" y="115" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" letter-spacing="2" fill="#0a2540">VOLUME VI · v1.0</text>
+            </svg>
+            <p class="seal__label">Approved</p>
+          </div>
         </div>
       </div>
     </section>
@@ -1292,6 +1549,7 @@
         <a href="#vol3">Volume III</a>
         <a href="#vol4">Volume IV</a>
         <a href="#vol5">Volume V</a>
+        <a href="#vol6">Volume VI</a>
         <a href="#library">Library</a>
         <a href="#charter">AI Charter</a>
         <a href="#roadmap">25-Year Vision</a>

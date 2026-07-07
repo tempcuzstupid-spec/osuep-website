@@ -683,6 +683,9 @@ ul, ol { padding-left: 1.25em; }
 .volume-banner--teal {
   background: linear-gradient(135deg, #1f5687 0%, #2a8e8e 100%);
 }
+.volume-banner--slate {
+  background: linear-gradient(135deg, #2a3a4d 0%, #4a5b6e 100%);
+}
 .volume-meta {
   display: flex;
   flex-wrap: wrap;
