@@ -689,6 +689,11 @@ ul, ol { padding-left: 1.25em; }
 .volume-banner--violet {
   background: linear-gradient(135deg, #3a1a5c 0%, #6b3aa0 100%);
 }
+.volume-banner--amber {
+  background: linear-gradient(135deg, #5c3a0a 0%, #b07a1a 60%, #c8862a 100%);
+}
+.volume-banner--amber .section__title { color: #fff8e7; }
+.volume-banner--amber .section__lede { color: #f0e5cf; }
 .volume-meta {
   display: flex;
   flex-wrap: wrap;
@@ -812,6 +817,20 @@ ul, ol { padding-left: 1.25em; }
 .seal--small .seal__label {
   font-size: 0.72rem;
   letter-spacing: 0.2em;
+}
+.seal--gold .seal__label {
+  color: #b07a1a;
+  font-weight: 700;
+}
+.seal--gold { border-color: rgba(176, 122, 26, 0.35); }
+
+.final-seal {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.final-seal svg {
+  filter: drop-shadow(0 8px 24px rgba(245, 183, 0, 0.25));
 }
 .seal {
   display: flex;
