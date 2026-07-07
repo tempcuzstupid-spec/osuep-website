@@ -58,6 +58,12 @@
     '.hero__lede',
     '.hero__meta',
     '.hero__cta',
+    '.volume-banner .section__title',
+    '.volume-banner .section__lede',
+    '.volume-meta',
+    '.volume-banner__quote',
+    '.library__item',
+    '.seal-row',
   ];
   const revealItems = document.querySelectorAll(revealSelectors.join(','));
   revealItems.forEach((el, idx) => {
