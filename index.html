@@ -7,7 +7,7 @@
   <meta name="author" content="One Stop Uniforms" />
   <meta name="robots" content="index,follow" />
   <meta property="og:title" content="One Stop Uniforms — Enterprise Master Specification" />
-  <meta property="og:description" content="The constitutional foundation of the OSUEP. Volumes I–III approved; volumes IV–VIII in spec." />
+  <meta property="og:description" content="The constitutional foundation of the OSUEP. Volumes I–IV approved; volumes V–VIII in spec." />
   <meta property="og:type" content="website" />
   <title>One Stop Uniforms — Enterprise Master Specification</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a2540'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%23f5b700'%3EO%3C/text%3E%3C/svg%3E" />
@@ -23,7 +23,7 @@
   <!-- Top bar -->
   <div class="topbar">
     <div class="container topbar__inner">
-      <span class="topbar__badge">Volumes I–III · Approved Foundation Drafts</span>
+      <span class="topbar__badge">Volumes I–IV · Approved Foundation Drafts</span>
       <span class="topbar__meta">Enterprise Master Specification · Confidential — Internal Use Only</span>
     </div>
   </div>
@@ -48,6 +48,7 @@
         <a href="#vol1">Vol I</a>
         <a href="#vol2">Vol II</a>
         <a href="#vol3">Vol III</a>
+        <a href="#vol4">Vol IV</a>
         <a href="#library">Library</a>
         <a href="#charter">AI Charter</a>
         <a href="#roadmap">25-Year Vision</a>
@@ -62,6 +63,7 @@
       <a href="#vol1">Volume I — Foundation</a>
       <a href="#vol2">Volume II — Customer Experience</a>
       <a href="#vol3">Volume III — Administration &amp; Operations</a>
+      <a href="#vol4">Volume IV — Product &amp; Supplier</a>
       <a href="#library">Specification Library</a>
       <a href="#charter">AI Charter</a>
       <a href="#roadmap">25-Year Vision</a>
@@ -84,7 +86,7 @@
         </p>
         <div class="hero__meta">
           <div><span class="hero__meta-label">Volumes</span><span class="hero__meta-value">I – VIII</span></div>
-          <div><span class="hero__meta-label">Approved</span><span class="hero__meta-value">3 of 8</span></div>
+          <div><span class="hero__meta-label">Approved</span><span class="hero__meta-value">4 of 8</span></div>
           <div><span class="hero__meta-label">Version</span><span class="hero__meta-value">1.0</span></div>
           <div><span class="hero__meta-label">Owner</span><span class="hero__meta-value">One Stop Uniforms</span></div>
         </div>
@@ -92,6 +94,7 @@
           <a href="#vol1" class="btn btn--primary">Read Volume I</a>
           <a href="#vol2" class="btn btn--ghost">Volume II</a>
           <a href="#vol3" class="btn btn--ghost">Volume III</a>
+          <a href="#vol4" class="btn btn--ghost">Volume IV</a>
           <a href="#library" class="btn btn--ghost">All 8 Volumes</a>
         </div>
       </div>
@@ -664,6 +667,222 @@
 
     </div><!-- /#vol3 -->
 
+    <!-- ====================== VOLUME IV ====================== -->
+    <div id="vol4">
+
+    <!-- Volume IV banner -->
+    <section class="section volume-banner volume-banner--steel" id="volume-4">
+      <div class="container">
+        <p class="section__eyebrow">Volume IV</p>
+        <h2 class="section__title">Product Information &amp; Supplier Integration</h2>
+        <p class="section__lede">
+          Define the enterprise product catalog architecture and supplier
+          integration framework — the system of record for every product, every
+          supplier, and every price the platform ever offers.
+        </p>
+        <div class="volume-meta">
+          <span class="volume-meta__pill volume-meta__pill--approved">Status: Approved Foundation Draft</span>
+          <span class="volume-meta__pill">Version 1.0</span>
+          <span class="volume-meta__pill">Depends on: Volumes I–III</span>
+        </div>
+        <div class="volume-banner__quote">
+          <strong>Inheritance Statement:</strong> This volume inherits all
+          architectural, governance, security, and business standards established
+          in earlier volumes.
+        </div>
+      </div>
+    </section>
+
+    <!-- Vol IV — Purpose + Canonical Product Model -->
+    <section class="section" id="vol4-purpose">
+      <div class="container container--narrow">
+        <p class="section__eyebrow">Purpose</p>
+        <h2 class="section__title">One catalog, every supplier, one brand</h2>
+        <p class="section__lede">
+          Define the enterprise product catalog architecture and supplier integration
+          framework for One Stop Uniforms &mdash; so the customer always sees a single
+          authoritative catalog, regardless of how many suppliers serve it.
+        </p>
+        <div class="card card--feature">
+          <p class="card__eyebrow">Canonical Product Model</p>
+          <h3 class="card__title">Every public product owns a stable identity</h3>
+          <p class="card__body">
+            Every public-facing product receives an internal Product ID and internal
+            SKU &mdash; independent of supplier identifiers. The OSUEP is the canonical
+            source of truth; suppliers are upstream data sources.
+          </p>
+          <ul class="chip-grid" aria-label="Canonical identifiers">
+            <li class="chip">Internal Product ID</li>
+            <li class="chip">Internal SKU</li>
+            <li class="chip">Vendor Identifiers (Internal Only)</li>
+            <li class="chip">Public URL</li>
+            <li class="chip">Pricing</li>
+            <li class="chip">Metadata</li>
+            <li class="chip">Search Index</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vol IV — Supplier Integration + Abstraction (split) -->
+    <section class="section section--split section--alt" id="vol4-suppliers">
+      <div class="container">
+        <div class="card card--feature">
+          <p class="card__eyebrow">Supplier Integration</p>
+          <h3 class="card__title">Plug-and-play with the brands that matter</h3>
+          <p class="card__body">
+            Support secure integrations with SanMar, S&amp;S; Activewear, Blue
+            Generation, and future suppliers using APIs or approved catalog
+            feeds. Each integration is a typed, validated contract.
+          </p>
+          <ul class="chip-grid" aria-label="Supported suppliers">
+            <li class="chip">SanMar</li>
+            <li class="chip">S&amp;S Activewear</li>
+            <li class="chip">Blue Generation</li>
+            <li class="chip">Future Suppliers</li>
+            <li class="chip">API Integrations</li>
+            <li class="chip">Approved Catalog Feeds</li>
+          </ul>
+        </div>
+
+        <div class="card card--feature card--accent">
+          <p class="card__eyebrow">Supplier Abstraction</p>
+          <h3 class="card__title">The brand customers trust is the only brand they see</h3>
+          <p class="card__body">
+            Supplier names, SKUs, pricing, and internal identifiers remain hidden
+            from customers. Public product records are owned exclusively by One
+            Stop Uniforms &mdash; reinforcing Vol I's Fundamental Rule #1.
+          </p>
+          <ul class="chip-grid" aria-label="Hidden from customers">
+            <li class="chip">Supplier Names (Hidden)</li>
+            <li class="chip">Supplier SKUs (Hidden)</li>
+            <li class="chip">Internal Pricing (Hidden)</li>
+            <li class="chip">Internal Identifiers (Hidden)</li>
+            <li class="chip">Public Record Owner</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vol IV — Catalog Synchronization + Pricing Engine (split) -->
+    <section class="section section--split" id="vol4-syncpricing">
+      <div class="container">
+        <div class="card card--feature">
+          <p class="card__eyebrow">Catalog Synchronization</p>
+          <h3 class="card__title">Automated, validated, reconciled</h3>
+          <p class="card__body">
+            Automated import of products, images, specifications, inventory,
+            pricing, and availability using scheduled synchronization and
+            validation workflows &mdash; no manual supplier file pushes.
+          </p>
+          <ul class="charter-grid">
+            <li><span class="check" aria-hidden="true">&#10003;</span> Products</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Images</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Specifications</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Inventory</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Pricing</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Availability</li>
+          </ul>
+        </div>
+
+        <div class="card card--feature card--accent">
+          <p class="card__eyebrow">Pricing Engine</p>
+          <h3 class="card__title">Rules everywhere, margin preserved always</h3>
+          <p class="card__body">
+            Support configurable markup rules, contract pricing, promotional
+            pricing, volume discounts, customer-specific pricing, and minimum
+            margin protection &mdash; so every customer sees a price that fits
+            their contract without exposing our cost base.
+          </p>
+          <ul class="charter-grid">
+            <li><span class="check" aria-hidden="true">&#10003;</span> Markup Rules</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Contract Pricing</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Promotional Pricing</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Volume Discounts</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Customer-Specific Pricing</li>
+            <li><span class="check" aria-hidden="true">&#10003;</span> Minimum Margin Protection</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vol IV — Inventory & Fulfillment -->
+    <section class="section section--alt" id="vol4-inventory">
+      <div class="container">
+        <p class="section__eyebrow">Inventory &amp; Fulfillment</p>
+        <h2 class="section__title">Available, allocated, fulfilled</h2>
+        <p class="section__lede">
+          Track inventory availability, allocate orders to suppliers, monitor
+          fulfillment status, support backorders, substitutions, and shipment
+          tracking &mdash; the last mile of the catalog becomes first-class.
+        </p>
+        <ul class="values-grid">
+          <li class="value" data-i="01"><h4>Inventory Availability</h4><p>Real-time stock across suppliers and warehouses.</p></li>
+          <li class="value" data-i="02"><h4>Order Allocation</h4><p>Rule-based routing to suppliers by capability and capacity.</p></li>
+          <li class="value" data-i="03"><h4>Fulfillment Monitoring</h4><p>Live stage-of-completion dashboards.</p></li>
+          <li class="value" data-i="04"><h4>Backorders</h4><p>Backorder capture, ETA surfacing, customer notifications.</p></li>
+          <li class="value" data-i="05"><h4>Substitutions</h4><p>Approved-equivalent swaps with customer-first defaults.</p></li>
+          <li class="value" data-i="06"><h4>Shipment Tracking</h4><p>Carrier-grade tracking surfaced to ops and customers.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Vol IV — Future Expansion (dark) -->
+    <section class="section section--dark" id="vol4-future-expansion">
+      <div class="container">
+        <p class="section__eyebrow section__eyebrow--light">Future Expansion</p>
+        <h2 class="section__title section__title--light">Open-ended by design</h2>
+        <p class="section__lede section__lede--light">
+          Architecture shall support unlimited suppliers, warehouses, decorators,
+          manufacturers, and private-label products without redesign.
+        </p>
+        <ol class="rules-list">
+          <li class="rule">
+            <span class="rule__num">01</span>
+            <div class="rule__body">
+              <h4>Unlimited Suppliers</h4>
+              <p>Onboard new suppliers without platform changes.</p>
+            </div>
+          </li>
+          <li class="rule">
+            <span class="rule__num">02</span>
+            <div class="rule__body">
+              <h4>Multiple Warehouses</h4>
+              <p>Region-aware fulfillment and inventory pooling.</p>
+            </div>
+          </li>
+          <li class="rule">
+            <span class="rule__num">03</span>
+            <div class="rule__body">
+              <h4>Decorators &amp; Manufacturers</h4>
+              <p>Multi-party production routing per decoration workflow.</p>
+            </div>
+          </li>
+          <li class="rule">
+            <span class="rule__num">04</span>
+            <div class="rule__body">
+              <h4>Private-Label Products</h4>
+              <p>OSUEP-branded and customer-branded SKUs under one model.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Vol IV — Strategic Goal -->
+    <section class="section" id="vol4-strategic-goal">
+      <div class="container container--narrow">
+        <p class="section__eyebrow">Strategic Goal</p>
+        <h2 class="section__title">Resilient catalog, hidden suppliers, one brand</h2>
+        <blockquote class="pull-quote">
+          “Create a resilient enterprise product platform that protects supplier
+          relationships while delivering accurate catalog data and scalable operations.”
+        </blockquote>
+      </div>
+    </section>
+
+    </div><!-- /#vol4 -->
+
     <!-- ====================== SPECIFICATION LIBRARY ====================== -->
     <section class="section section--alt" id="library">
       <div class="container">
@@ -671,7 +890,7 @@
         <h2 class="section__title">All eight volumes</h2>
         <p class="section__lede">
           The OSUEP master specification is structured as eight volumes. Volumes
-          I–III are approved; Volumes IV–VIII are in development and will land in
+          I–IV are approved; Volumes V–VIII are in development and will land in
           succession.
         </p>
         <ul class="library" aria-label="Specification volumes">
@@ -699,12 +918,12 @@
               <span class="library__pill library__pill--ok">Approved</span>
             </div>
           </li>
-          <li class="library__item" id="lib-4">
+          <li class="library__item library__item--approved" id="lib-4">
             <span class="library__num">IV</span>
             <div class="library__body">
-              <h4>Pending Spec</h4>
-              <p>Awaiting governing document from One Stop Uniforms.</p>
-              <span class="library__pill">Pending</span>
+              <h4>Product Information &amp; Supplier Integration</h4>
+              <p>Canonical catalog, supplier abstraction, pricing engine, inventory.</p>
+              <span class="library__pill library__pill--ok">Approved</span>
             </div>
           </li>
           <li class="library__item" id="lib-5">
@@ -824,6 +1043,15 @@
             </svg>
             <p class="seal__label">Approved</p>
           </div>
+          <div class="seal seal--small">
+            <svg viewBox="0 0 200 200" width="100" height="100" aria-hidden="true">
+              <circle cx="100" cy="100" r="92" fill="none" stroke="#0a2540" stroke-width="3"/>
+              <circle cx="100" cy="100" r="74" fill="none" stroke="#0a2540" stroke-width="1"/>
+              <text x="100" y="90" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#0a2540">OSUEP</text>
+              <text x="100" y="115" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" letter-spacing="2" fill="#0a2540">VOLUME IV · v1.0</text>
+            </svg>
+            <p class="seal__label">Approved</p>
+          </div>
         </div>
       </div>
     </section>
@@ -839,6 +1067,7 @@
         <a href="#vol1">Volume I</a>
         <a href="#vol2">Volume II</a>
         <a href="#vol3">Volume III</a>
+        <a href="#vol4">Volume IV</a>
         <a href="#library">Library</a>
         <a href="#charter">AI Charter</a>
         <a href="#roadmap">25-Year Vision</a>
